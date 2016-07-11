@@ -13,8 +13,7 @@
  ### 1. What is the type of the variable `pet` declared below?
  */
 var pet = "turtle 🐢"
-
-
+//String
 
 
 
@@ -23,8 +22,7 @@ var pet = "turtle 🐢"
  ### 2. What is the type of the variable `petName` declared below?
  */
 var petName: String?
-
-
+//string optional.
 
 
 
@@ -32,7 +30,7 @@ var petName: String?
 /*: question3
  ### 3. Currently, what is the _value_ of `petName`?
  */
-
+//nil
 
 
 
@@ -45,8 +43,8 @@ var petName: String?
 // write your code here
 
 
-
-
+petName = "Maeby"
+//optional string
 
 
 
@@ -54,7 +52,7 @@ var petName: String?
  ### 5. Print out `petName` using Swift's `print()` function. What do you expect to see in the console?
  */
 // write your code here
-
+print(petName)
 
 
 
@@ -66,7 +64,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName)
+} else {
+    print("pet name is nil")
+}
 
 
 
@@ -77,7 +79,9 @@ var petName: String?
  */
 // write your code here
 
-
+if let petName = petName {
+    print(petName)
+}
 
 
 
@@ -92,14 +96,24 @@ var anotherPetName: String?
 
 
 
-
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+}
+else
+{
+print ("anotherPetName is nil")
+}
 
 /*: question9
  ### 9. Using optional binding, write an if statement that prints "anotherPetName has no value" if it is `nil`; otherwise, print the _unwrapped_ value of `anotherPetName`. What do you expect to see in the console?
  */
+//anotherPetName = "lulu"
 // write your code here
-
+if anotherPetName == nil {
+    print( "anotherPetName has no value" )
+} else {
+    print(anotherPetName!)
+}
 
 
 
@@ -113,6 +127,9 @@ var anotherPetName: String?
  */
 // write your code here
 
+let constant : String?
+
+constant = "Dog"
 
 
 
@@ -125,6 +142,11 @@ var anotherPetName: String?
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
 // write your code here
+
+let constant2 : String? = nil
+
+//constant2 = "Dog"
+
 
 
 
